@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./Images/vite.svg" />
+  </head>
+  <body>
+    <!-- Nav Links -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3">
+      <div class="container d-flex justify-content-between">
+        <a href="./index.html" class="navbar-brand"
+          ><img src="./Images/vite.svg" alt="Logo" width="40px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-2">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="./login.html" class="nav-link">New Post</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="./dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="./projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="./help.html" class="nav-link">Posts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Posts Section -->
+    <div class="container-fluid bg-secondary p-3" id="post-section">
+      <h2 class="text-center mt-3 text-white mb-4">Posts Section</h2>
+      <div id="spinner" style="display: block">
+        <div class="blue-spinner"></div>
+      </div>
+      <div class="container p-1 mb-2" id="content" style="display: none">
+        <div class="p-3 rounded" id="card-cont">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container p-4 d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
+          <a href="./index.html">
+            <img src="./Images/vite.svg" alt="Logo" />
+          </a>
+          <p class="text-white text-center">
+            Junior Web Dev Developers Society.
+          </p>
+        </div>
+        <div>
+          <p class="text-center text-white">Developed by Jedidiah</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Spinner
+      setTimeout(function () {
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }, 10000);
+    </script>
+    <script src="./script.js"></script>
+    <script src="./Bootstrap/js/bootstrap.js"></script>
+    <script src="./Bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

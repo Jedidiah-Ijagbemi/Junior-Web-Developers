@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  #new-task {
+    position: relative;
+    background-color: #ffffff;
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+  #new-task input:focus {
+    outline: none;
+    border-color: #ff0b0b;
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #ff0b0b;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #tasks {
+    background-color: transparent;
+    padding: 1em 1.25em;
+    width: 100%;
+    box-shadow: 10px 10px 10px 10px rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+  }
+  .task {
+    background-color: transparent;
+    padding: 0.1em 0.6em;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .task button {
+    color: #ffffff;
+    padding: 0.8em 0;
+    width: 2.8em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #fb3b3b;
+  }
+  .edit {
+    background-color: #0b87ff;
+    margin-left: auto;
+    margin-right: 3em;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  .blue-spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hero-h2 {
+    margin-top: 250px;
+  }
+  .hero-section {
+    background-image: url("./Images/img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  @media (max-width: 650px) {
+    .hero-section {
+      background-image: url("./Images/img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+    }
+    .hero-h2 {
+      margin-top: 175px;
+    }
+  }
+
+  /* special styles for dashboard */
+  #username {
+    background-color: #ffffff;
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #username input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+  #username input:focus {
+    outline: none;
+    border-color: #ce0bff;
+  }
+  #username button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #b20bff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+
+  /* Special styles for project page */
+  #project-section {
+    background-image: url('./Images/showcase.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
